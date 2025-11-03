@@ -1,0 +1,30 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "API Todo (.NET 9) \u2013 Debug DLL",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/src/Api/bin/Debug/net9.0/Api.dll",
+      "args": [
+        "--urls",
+        "http://localhost:5035"
+      ],
+      "cwd": "${workspaceFolder}/src/Api",
+      "stopAtEntry": false,
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "JWT_DEMO_USER": "rodrigo",
+        "JWT_DEMO_PASS": "vini123",
+        "AUTO_MIGRATE": "false",
+        "MONGODB_URI": "mongodb+srv://rodrigoprado:123@cluster0.jqwsmpj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+        "MONGODB_DB": "todo_db"
+      },
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+      }
+    }
+  ]
+}
