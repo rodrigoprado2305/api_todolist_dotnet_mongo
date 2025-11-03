@@ -24,10 +24,18 @@ Na inicialização a API:
 
 ## Rodando
 ```bash
+dotnet clean
 dotnet restore
 dotnet build
 dotnet run --project src/Api/Api.csproj
 ```
+## Rodando net 8.0
+<TargetFramework>net8.0</TargetFramework>
+<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.11" />
+
+## Rodando net 9.0
+<TargetFramework>net9.0</TargetFramework>
+<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.0" />
 
 ## Rodando bash - Para usar um profile do launchSettings.json:
 ```
@@ -37,6 +45,19 @@ dotnet run --project D:\github\Rod\dotnet\api_todolist_dotnet_mongo\src\Api\Api.
 
 ## Login
 `POST /login` — se definir `JWT_DEMO_USER` e `JWT_DEMO_PASS`, usa essas credenciais; senão, aceita qualquer par (apenas para estudo).
+
+# Swagger
+
+http://localhost:5035/swagger
+
+## Rotas
+- `POST /login` → retorna `{ "token": "..." }` (JWT HS256).  
+  
+http://localhost:5035/login
+body: {
+  "username": "rodrigo",
+  "password": "vini123"
+}
 
 ## Observações
 - `_id` (ObjectId) é interno do Mongo; o `Id` inteiro é o que a API usa nas rotas.

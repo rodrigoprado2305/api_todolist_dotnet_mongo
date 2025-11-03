@@ -49,3 +49,16 @@ src/Api/obj/Debug/net9.0/staticwebassets.build.json
 src/Api/obj/Debug/net9.0/staticwebassets.build.json.cache
 src/Api/obj/Debug/net9.0/ref/Api.dll
 src/Api/obj/Debug/net9.0/refint/Api.dll
+src/Api/bin/Debug/net9.0/AWSSDK.Core.dll
+src/Api/bin/Debug/net9.0/AWSSDK.SecurityToken.dll
+src/Api/bin/Debug/net9.0/DnsClient.dll
+src/Api/bin/Debug/net9.0/MongoDB.Bson.dll
+src/Api/bin/Debug/net9.0/MongoDB.Driver.Core.dll
+src/Api/bin/Debug/net9.0/MongoDB.Driver.dll
+src/Api/bin/Debug/net9.0/MongoDB.Libmongocrypt.dll
+src/Api/bin/Debug/net9.0/SharpCompress.dll
+src/Api/bin/Debug/net9.0/Snappier.dll
+src/Api/bin/Debug/net9.0/ZstdSharp.dll
+src/Api/bin/Debug/net9.0/runtimes/linux/native/libmongocrypt.so
+src/Api/bin/Debug/net9.0/runtimes/osx/native/libmongocrypt.dylib
+src/Api/bin/Debug/net9.0/runtimes/win/native/mongocrypt.dll
