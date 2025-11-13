@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: api-todolist-dotnet-mongo
+  description: API ToDo List em .NET com MongoDB para estudos de CI/CD
+  tags:
+    - dotnet
+    - mongo
+    - api
+  annotations:
+    github.com/project-slug: rodrigoprado2305/api_todolist_dotnet_mongo
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: service
+  lifecycle: experimental
+  owner: guests
