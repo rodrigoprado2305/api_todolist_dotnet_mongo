@@ -1,5 +1,6 @@
 # ToDoList API (.NET 9) — MongoDB Edition
 
+
 Esta versão troca MySQL + Dapper por **MongoDB.Driver**, mantendo as mesmas rotas:
 
 - `POST /tasks`  — cria (Id sequencial, simulando AUTO_INCREMENT)
@@ -28,6 +29,8 @@ dotnet clean
 dotnet restore
 dotnet build
 dotnet run --project src/Api/Api.csproj
+dotnet restore .\src\Api\Api.csproj
+dotnet build .\src\Api\Api.csproj -c Debug
 ```
 ## Rodando net 8.0
 <TargetFramework>net8.0</TargetFramework>
